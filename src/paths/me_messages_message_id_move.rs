@@ -49,7 +49,7 @@ impl<'a> PostRequestBody<'a> {
         val.as_str()
             .ok_or_else(|| Error::UnexpectedResponse(format!("{val:?}")))
     }
-    // #[doc = "Setter for [`destination_id`](Self::destination_id).\n\nThis library makes no guarantees that Graph exposes this property as writable."]
+    #[doc = "Setter for [`destination_id`](Self::destination_id).\n\nThis library makes no guarantees that Graph exposes this property as writable."]
     #[must_use]
     pub fn set_destination_id(mut self, val: String) -> Self {
         self.properties
